@@ -21,6 +21,11 @@ order: 4
 * 严以律己，宽以待人
 * 不要低估人性的自私，不要高估自己的能力
 
+## 之前的BLOG链接
+
+* [博客园 https://www.cnblogs.com/coded-ream](https://www.cnblogs.com/coded-ream)
+* [CSDN https://blog.csdn.net/WR_technology](https://blog.csdn.net/WR_technology)
+
 
 想留言讨论可以私信或者issue里面公开讨论
 
