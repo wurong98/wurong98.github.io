@@ -16,10 +16,10 @@ timezone: Asia/Shanghai
 
 title: wurong的Blog # the main title
 
-tagline: 谋事在人成事在天，制度定下限，运气决定上限，个体只是变量，系统才是函数
+tagline: 谋事在人成事在天，制度决定下限，运气决定上限，个体只是变量，系统才是函数
 
 description: >- # used by seo meta and the atom feed
-  wurong's Blog
+  wurong's website
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
