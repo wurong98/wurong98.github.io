@@ -164,13 +164,25 @@ def main():
         print(mnemonic_phrase)
 
     elif args.command == "hash":
-        pin = getpass.getpass("请输入密码: ")
-        word = getpass.getpass("请输入单词: ")
-        tool = HashTool(pin=pin)
-        encrypted = tool.encrypt(word)
-        decrypted = tool.decrypt(word)
-        print(f"加密结果: {encrypted}")
-        print(f"解密结果: {decrypted}")
+        try:
+            while True:
+                pin1 = getpass.getpass("请输入密码: ")
+                pin2 = getpass.getpass("请确认密码: ")
+                if pin1 == pin2:
+                    break
+                else:
+                    print("错误: 密码不一致，请重新输入")
+            print("✅ 进入单词加解密循环，按 Ctrl+C 退出。")
+            while True:
+                word = getpass.getpass("请输入单词: ")
+                tool = HashTool(pin=pin1)
+                encrypted = tool.encrypt(word)
+                decrypted = tool.decrypt(word)
+                print(f"加密结果: {encrypted}")
+                print(f"解密结果: {decrypted}")
+        except KeyboardInterrupt:
+            print("\n🔴 已退出")
+            exit(0)
     else:
         parser.print_help()
 
